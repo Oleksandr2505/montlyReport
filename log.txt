@@ -1,0 +1,8 @@
+[Error]: 45
+Uncorrectly typed the amount of months! 
+[Error]: 46
+Uncorrectly typed the amount of months! 
+[Error]: 19
+Uncorrectly typed the amount of months! 
+[Info]: 1
+Succussfully made monthly report of all employees!
