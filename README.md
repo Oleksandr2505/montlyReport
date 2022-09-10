@@ -1,5 +1,5 @@
 # montlyReport
-montly report out of all employees.
+Montly report out of all employees.
 I was able to execute this program by displaying the data in the console.
 Sorting employee's hours to create a monthly report and write the correct data into the file.
 Probably this is not the most effective solution out of all possible solutions, but it fully performs its purpose.
