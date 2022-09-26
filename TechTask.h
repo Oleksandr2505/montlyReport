@@ -10,8 +10,7 @@ using namespace std;
 
 fstream open("file1.txt");
 
-/*1. Forgot to remove it immediately when pushed the code to GitHub.
-2. Couldn't implement the aimed sense (reading from a file then sorting month report and push to the next file) 
+/*I Couldn't implement the aimed sense (reading from a file then sorting month report and push to the next file) 
 I have done in writing in console instead of;
 I've been searching for a while for the correct reading and then sorting it from the file, but my attempt failed,
 I understand how it should be (kind of I should read from the file, push into the arrays, every "name, month, logged hours" 
