@@ -5,6 +5,15 @@
 int cases = 0;
 int oneCase = 0;
 
+/*
+I Couldn't implement the aimed sense (reading from a file then sorting month report and push to the next file) 
+I have done in writing in console instead of;
+I've been searching for a while for the correct reading and then sorting it from the file, but my attempt failed,
+I understand how it should be (kind of I should read from the file, push into the arrays, every "name, month, logged hours" 
+must have their container for scanning/sorting from the file, then making monthly report)
+but I haven't found out any function/logic specifically for strings
+(it is easy to read numeric values from the file and append it ) to create a monthly report of all employees,
+I did my best!*/
 
 int main()
 {
