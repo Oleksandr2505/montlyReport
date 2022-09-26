@@ -10,6 +10,16 @@ using namespace std;
 
 fstream open("file1.txt");
 
+/*1. Forgot to remove it immediately when pushed the code to GitHub.
+2. Couldn't implement the aimed sense (reading from a file then sorting month report and push to the next file) 
+I have done in writing in console instead of;
+I've been searching for a while for the correct reading and then sorting it from the file, but my attempt failed,
+I understand how it should be (kind of I should read from the file, push into the arrays, every "name, month, logged hours" 
+must have their container for scanning/sorting from the file, then making monthly report)
+but I haven't found out any function/logic specifically for strings
+(it is easy to read numeric values from the file and append it ) to create a monthly report of all employees,
+I did my best!*/
+
 //I was able to execute this program by displaying the data in the console
 //sorting employee's hours to create a monthly report and write the correct data into the file
 //probably this is not the most effective solution out of all possible solutions, but it fully performs its purpose
@@ -25,16 +35,35 @@ public:
     int totalHours = 0;
  
     int countNameEmployees = 0;
-    string names[100];
-    string emails[100];
-    string departments[100];
-    string positions[100];
-    string projects[100];
-    string tasks[100];
-    int dates[100];
-    int years[100];
-    int dayOfMonth[100];
-    int logged_hours[100];
+    
+    vector<string> names;
+    vector < string> emails;
+    vector < string> departments;
+    vector < string> positions;
+    vector < string> projects;
+    vector <string> tasks;
+    vector<int> dates;
+    vector<int> years;
+    vector<int> dayOfMonth;
+    vector<int> logged_hours;
+
+    void initializing() {
+
+        for (int i = 0; i < 100; i++)
+        {
+            names.push_back("");
+            emails.push_back("");
+            departments.push_back("");
+            positions.push_back("");
+            projects.push_back("");
+            tasks.push_back("");
+            dates.push_back(0);
+            years.push_back(0);
+            dayOfMonth.push_back(0);
+            logged_hours.push_back(0);
+
+        }
+    }
    
     employee(){ open << "Name, Month, Total Hours;" << endl; }
     
