@@ -10,20 +10,23 @@ int main()
 {
     BasicLogger bl;
     employee e;
-    
-    
-        cout << "Type the amount of shifts of an employee's you want to add: ";
-        std::cin >> cases;
-        cout << endl;
-        
-        while (cases < 1)
-        {
-            std::cout << "Wrong input, try again! " << endl;
-            std::cout << "Type atleast one request!" << endl;
-            bl.Log(FatalP, "Uncorrectly typed the amount of requests! ",cases);
-            std::cin >> cases;
-        }
- 
+    e.initializing();
+
+    cout << "Type the amount of shifts of an employee's you want to add: ";
+    //std::cin >> cases;
+    cout << endl;
+
+
+    if (cases < 1)
+    {
+        std::cout << "Wrong input! " << endl;
+        std::cout << "Next time Type atleast one request!" << endl;
+        bl.Log(FatalP, "Uncorrectly typed the amount of requests! ", cases);
+        return 1;
+
+    }
+
+
     std::cout << "Now you have to type: Name, email, ";
     std::cout << "department, position, project, task, year, date, logged_hours of an employee; " << std::endl << std::endl;
 
